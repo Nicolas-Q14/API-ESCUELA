@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Favoritos from "./pages/Favoritos";
@@ -9,7 +9,7 @@ import Detalle from "./pages/Detalle";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
         <Route path="/original" element={<Original />} />
         <Route path="/detalle/:id" element={<Detalle />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

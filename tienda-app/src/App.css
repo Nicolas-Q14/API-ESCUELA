@@ -129,3 +129,169 @@ textarea {
   margin: 15px 0;
   border-radius: 15px;
 }
+
+/* LOGIN Y REGISTRO */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.auth-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.auth-box h1 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #0f172a;
+  color: white;
+}
+
+.auth-box input::placeholder {
+  color: #94a3b8;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.auth-box button:hover {
+  background: #0ea5e9;
+}
+
+/* LOGOUT */
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* ESTADO USUARIO */
+
+.estado-user {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #0f172a;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* PERFIL */
+
+.perfil {
+  margin-top: 20px;
+}
+
+.perfil input,
+.perfil textarea {
+  width: 300px;
+  background: #0f172a;
+  color: white;
+}
+/* ========================= */
+/* NAVBAR MODERNA */
+/* ========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #1e293b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ========================= */
+/* LOGOUT */
+/* ========================= */
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
